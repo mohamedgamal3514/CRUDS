@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -----------link font Awesome-------------- -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- -----------link google fonts-------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <!-- -----------link Bootstrap css-------------- -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- -----------link css-------------- -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- -----------link css media-------------- -->
+    <link rel="stylesheet" href="./css/media.css" />
+    <title>Operation System</title>
+</head>
+
+<body class="bg-dark vh-100">
+    <main class="p-5">
+        <div class="container shadow-sm text-white p-5">
+            <h1 class="text-center mb-4">Operation System</h1>
+            <div>
+                <div class="text-start mb-2">
+                    <label for="productName" class="pb-1">Product Model</label>
+                    <input type="text" id="productName" class="form-control">
+                </div>
+                <div class="text-start mb-2">
+                    <label for="productPrice" class="pb-1">Product Price</label>
+                    <input type="text" id="productPrice" class="form-control">
+                </div>
+                <div class="text-start mb-2">
+                    <label for="productCat" class="pb-1">Product Category</label>
+                    <input type="text" id="productCat" class="form-control">
+                </div>
+                <div class="text-start mb-2">
+                    <label for="productDetails" class="pb-1">Product Details</label>
+                    <input type="text" id="productDetails" class="form-control">
+                </div>
+                <button class="btn btn-primary text-white mt-3 w-100" onclick="addProducts()" id="addBtn">Add Products</button>
+                <div class="text-center my-3 w-50 mx-auto">
+                    <label for="searchInput" class="pb-1">Search</label>
+                    <input type="search" oninput="searchProducts()" id="searchInput" class="form-control">
+                </div>
+            </div>
+            <div>
+                <table class="table mt-5 table-striped align-middle">
+                    <thead>
+                        <tr>
+                            <th>S/N</th>
+                            <th>Product Name</th>
+                            <th>Product Price</th>
+                            <th>Product Category</th>
+                            <th>Product Details</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <!-- -----------link Bootstrap JS-------------- -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- -----------link Main JS-------------- -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
